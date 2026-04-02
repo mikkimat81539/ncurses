@@ -91,4 +91,27 @@ void sleep(){
 
 }
 
-void run(){}
+void run(){
+	printw("Do you want to walk, run or jog?\n");
+	printw("Press w to walk\n");
+	printw("Press r to run\n");
+	printw("Press j to jog\n\n");
+
+	key = getch();
+
+	if (key == 'w'){
+		printw("You are walking\n");
+	}
+
+	else if (key == 'r'){
+		printw("You are running\n");
+	}
+	
+	else if (key == 'j'){
+		printw("You are jogging\n");
+	}
+
+	else {
+		printw("You decide to sit and relax\n");
+	}
+}
