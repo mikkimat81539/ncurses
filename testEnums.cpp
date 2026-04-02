@@ -4,6 +4,7 @@ using namespace std;
 
 int main(){
 	int energy = 100;
+	int selection;
 
 	enum Actions {
 		STAND = 0,
@@ -14,6 +15,10 @@ int main(){
 	};	
 
 	cout << "current energy at " << energy << " percent." << endl;	
+
+	cout << "Do you want to STAND, WALK, SKIP, JOG, OR RUN: ";
+
+	cin >> selection;
 
 	return 0;
 }
