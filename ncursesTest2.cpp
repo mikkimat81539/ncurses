@@ -4,6 +4,7 @@
 void eat();
 void sleep();
 void  run();
+
 int key;
 
 int main(){
@@ -21,6 +22,16 @@ int main(){
 	if(key == 'e'){
 		printw("You decide to eat.\n\n");
 		eat();
+	}
+
+	else if(key == 'z'){
+		printw("You decide to sleep.\n\n");
+		sleep();
+	}
+
+	else if(key == 'r'){
+		printw("You decide to run.\n\n");
+		run();
 	}
 
 	getch();
@@ -52,4 +63,32 @@ void eat(){
 	else {
 		printw("You decided to eat nothing");
 	}
-}	
+}
+
+void sleep(){
+	printw("What time do you want to sleep?\n");
+	printw("Press 7 to go to be at 7:00PM\n");
+	printw("Press 8 to go to be at 8:00PM\n");
+	printw("Press 9 to go to be at 9:00PM\n\n");
+
+	key = getch();
+
+	if (key == '7'){
+		printw("You went to bed at 7:00PM\n");
+	}
+
+	else if (key == '8'){
+		printw("You want to bed at 8:00PM\n");
+	}
+
+	else if (key == '9'){
+		printw("You went to bed at 9:00PM\n");
+	}
+
+	else {
+		printw("You decide to stay up past your bed time\n");
+	}
+
+}
+
+void run(){}
