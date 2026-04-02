@@ -9,6 +9,8 @@ int key;
 
 int main(){
 	initscr();
+	raw(); // line buffering disabled
+	//cbreak(); // line buffering enabled
 	keypad(stdscr, TRUE);
 	noecho();
 
@@ -32,6 +34,10 @@ int main(){
 	else if(key == 'r'){
 		printw("You decide to run.\n\n");
 		run();
+	}
+
+	else{
+		printw("You decide to stare at a wall.\n");
 	}
 
 	getch();
