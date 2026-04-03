@@ -35,7 +35,7 @@ int main(){
 	else if(userSelection == walk){
 		deplete = energy - 25;
 		cout << "You have used up 25 percent energy" << endl;
-		cout << "You have " << deplete << " percent energy remaining" << endl; 	
+		cout << "You have " << deplete << " percent energyremaining" << endl; 	
 	}
 
 	else if(userSelection == skip){
