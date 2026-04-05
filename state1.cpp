@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// a class holding an enum, not a true state pattern implementation.
+
 enum controlSwitch { // List out the states
 	ON = 1,
 	OFF = 0
